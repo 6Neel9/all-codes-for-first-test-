@@ -1,30 +1,14 @@
-const number = parseInt(prompt("Enter a positive number: "));
-let isPrime = true;
-
-
-if (number === 1) {
-    console.log("1 is neither prime nor composite number.");
+var n = prompt("Enter a number: ");
+{
+for(i = 2; i <= n/2; i++)
+{
+if(n % i ==0)
+{
+break;
 }
-
-
-else if (number > 1) {
-
-    
-    for (let i = 2; i < number; i++) {
-        if (number % i == 0) {
-            isPrime = false;
-            break;
-        }
-    }
-
-    if (isPrime) {
-        console.log(`${number} is a prime number`);
-    } else {
-        console.log(`${number} is a not prime number`);
-    }
 }
-
-// check if number is less than 1
-else {
-    console.log("The number is not a prime number.");
+if(i > n/2)
+alert("is a Prime Number");
+else
+alert( "is not a Prime Number");
 }
